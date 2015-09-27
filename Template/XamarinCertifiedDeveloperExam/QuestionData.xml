@@ -1,0 +1,1421 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<masterquestiontemplate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<record>
+		<QuestionNo>1</QuestionNo>
+		<Question>An app entry point is designated by which ActivityAttribute property?</Question>
+		<StudyPlan>Android</StudyPlan>
+		<AnswerChoiceA>Main</AnswerChoiceA>
+		<AnswerChoiceB>EntryPoint</AnswerChoiceB>
+		<AnswerChoiceC>MainLauncher</AnswerChoiceC>
+		<AnswerChoiceD>Application</AnswerChoiceD>
+		<CorrectAnswer>C</CorrectAnswer>
+	</record>
+  <record>
+    <QuestionNo>2</QuestionNo>
+    <Question>How are the UI and code-behind for an Activity matched at runtime?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>The files must have the same name programmatically</AnswerChoiceA>
+    <AnswerChoiceB>Code-behind must explicitly load its UI </AnswerChoiceB>
+    <AnswerChoiceC>ActivityAttribute stores the name of the UI file </AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>3</QuestionNo>
+    <Question>The Application Package uses the ____ file extension?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>.apk</AnswerChoiceA>
+    <AnswerChoiceB> .zip</AnswerChoiceB>
+    <AnswerChoiceC>.appx </AnswerChoiceC>
+    <AnswerChoiceD>.xml </AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>4</QuestionNo>
+    <Question>To pass arguments to an Activity, load them into the Intent ______ </Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>Action</AnswerChoiceA>
+    <AnswerChoiceB>Data </AnswerChoiceB>
+    <AnswerChoiceC>Extras </AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>5</QuestionNo>
+    <Question>ListView uses ________ to prepare its rows for display </Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>Renderer </AnswerChoiceA>
+    <AnswerChoiceB>Adapter</AnswerChoiceB>
+    <AnswerChoiceC>ListBuilder </AnswerChoiceC>
+    <AnswerChoiceD>RowFactory </AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>6</QuestionNo>
+    <Question>ArrayAdapter is convenient, but it can only display a ______ in the row</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>string</AnswerChoiceA>
+    <AnswerChoiceB>icon</AnswerChoiceB>
+    <AnswerChoiceC>URI</AnswerChoiceC>
+    <AnswerChoiceD>button</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>7</QuestionNo>
+    <Question>How are the rows in a ListView created?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>The ListView creates them using a Data Template</AnswerChoiceA>
+    <AnswerChoiceB>The ListView asks the Adapter for each row as needed </AnswerChoiceB>
+    <AnswerChoiceC>Rows are always strings so there is no need to create them</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>8</QuestionNo>
+    <Question>What is ArrayAdapter's key limitation?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>Data objects must be in an array</AnswerChoiceA>
+    <AnswerChoiceB>The rows it builds do not support ItemClick events</AnswerChoiceB>
+    <AnswerChoiceC>It can only populate one TextView</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>9</QuestionNo>
+    <Question>How does ArrayAdapter convert the code-behind data into a string?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>CallsToString</AnswerChoiceA>
+    <AnswerChoiceB>Serializes the object to XML</AnswerChoiceB>
+    <AnswerChoiceC>Uses reflection to get the first string property in the object</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>10</QuestionNo>
+    <Question>Which ListView event is raised when the user clicks on a row?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>Click</AnswerChoiceA>
+    <AnswerChoiceB>ItemClick</AnswerChoiceB>
+    <AnswerChoiceC> ItemSelected</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>11</QuestionNo>
+    <Question>What is inflation?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>Populating a list with rows</AnswerChoiceA>
+    <AnswerChoiceB>Creating a Drawable from an Asset file</AnswerChoiceB>
+    <AnswerChoiceC>Loading code-behind data into the views of a row</AnswerChoiceC>
+    <AnswerChoiceD>Creating a view hierarchy from a layout file</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>12</QuestionNo>
+    <Question>If you implement the view-holder pattern correctly, how many times will you use FindViewById to locate each view in a row's view hierarchy?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>0</AnswerChoiceA>
+    <AnswerChoiceB>1</AnswerChoiceB>
+    <AnswerChoiceC>2</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>13</QuestionNo>
+    <Question>To provide indexing, you implement ISectionIndexer on which class? </Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>TheListViewitself</AnswerChoiceA>
+    <AnswerChoiceB>Your custom Adapter</AnswerChoiceB>
+    <AnswerChoiceC>Your Main Activity</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>14</QuestionNo>
+    <Question>GetSectionForPosition maps indices from ____________ </Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>list position to section index</AnswerChoiceA>
+    <AnswerChoiceB> section index to list position</AnswerChoiceB>
+    <AnswerChoiceC>view position to list position</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>15</QuestionNo>
+    <Question>The class that receives application-wide callbacks is _________</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>UIViewController</AnswerChoiceA>
+    <AnswerChoiceB>UIView</AnswerChoiceB>
+    <AnswerChoiceC>UIApplication </AnswerChoiceC>
+    <AnswerChoiceD>UIApplicationDelegate</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>16</QuestionNo>
+    <Question>Visual screens can be created through ___________</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>Storyboard </AnswerChoiceA>
+    <AnswerChoiceB>XIB file_</AnswerChoiceB>
+    <AnswerChoiceC>Code Behind</AnswerChoiceC>
+    <AnswerChoiceD>All of the above. </AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>17</QuestionNo>
+    <Question>Setting a Name on a Control creates a property and adds which attribute?</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>[Property] </AnswerChoiceA>
+    <AnswerChoiceB>[Action] </AnswerChoiceB>
+    <AnswerChoiceC>[Outlet] </AnswerChoiceC>
+    <AnswerChoiceD>[Register]</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>18</QuestionNo>
+    <Question>To navigate from one screen to another you use:</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>UIViewController</AnswerChoiceA>
+    <AnswerChoiceB>UINavigationManager</AnswerChoiceB>
+    <AnswerChoiceC>UINavigationController </AnswerChoiceC>
+    <AnswerChoiceD>UINavigationViewController</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>19</QuestionNo>
+    <Question>You must add a Back button to get backwards navigation</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>True</AnswerChoiceA>
+    <AnswerChoiceB>False</AnswerChoiceB>
+    <AnswerChoiceC>null</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>20</QuestionNo>
+    <Question>How can you create a segue in the Storyboard designer?</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>Right-click on the element and select "Navigate To"</AnswerChoiceA>
+    <AnswerChoiceB>Use the Property Pad to create the relationship</AnswerChoiceB>
+    <AnswerChoiceC>Use XCode </AnswerChoiceC>
+    <AnswerChoiceD>Control+Drag from a UI widget to another screen</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>21</QuestionNo>
+    <Question>Xamarin.iOS uses JIT compilation to create executable code at runtime</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>True</AnswerChoiceA>
+    <AnswerChoiceB>False</AnswerChoiceB>
+    <AnswerChoiceC>null</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>22</QuestionNo>
+    <Question>Xamarin.Forms is a _________________ (pick the best definition) </Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>Implementation of Windows Forms for iOS and Android</AnswerChoiceA>
+    <AnswerChoiceB>Set of classes for building data entry applicaRons</AnswerChoiceB>
+    <AnswerChoiceC>Cross-pladorm UI abstraction layer for iOS, Android and WP8</AnswerChoiceC>
+    <AnswerChoiceD>WPF for iOS and Android</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>23</QuestionNo>
+    <Question>To design and build Xamarin.iOS applications, you can use _________ </Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>Xamarin Studio on Windows or OS X, Visual Studio on Windows</AnswerChoiceA>
+    <AnswerChoiceB>Xamarin Studio on OS X, Visual Studio on Windows</AnswerChoiceB>
+    <AnswerChoiceC>Only Xamarin Studio on OS X </AnswerChoiceC>
+    <AnswerChoiceD>Only Visual Studio on Windows</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>24</QuestionNo>
+    <Question>Shared Projects create an output assembly directly</Question>
+    <StudyPlan>Cross-Platform</StudyPlan>
+    <AnswerChoiceA>True</AnswerChoiceA>
+    <AnswerChoiceB>False</AnswerChoiceB>
+    <AnswerChoiceC>null</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>25</QuestionNo>
+    <Question>What types of files can you add to a Shared Project? </Question>
+    <StudyPlan>Cross-Platform</StudyPlan>
+    <AnswerChoiceA>Source Code only</AnswerChoiceA>
+    <AnswerChoiceB>Source and Image assets</AnswerChoiceB>
+    <AnswerChoiceC>Source and Data files </AnswerChoiceC>
+    <AnswerChoiceD>Anything supported by the targets using the project</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>26</QuestionNo>
+    <Question>What techniques can be used to isolate platform specific code in a Shared Project?</Question>
+    <StudyPlan>Cross-Platform</StudyPlan>
+    <AnswerChoiceA>Conditional Compilation</AnswerChoiceA>
+    <AnswerChoiceB>Partial classes</AnswerChoiceB>
+    <AnswerChoiceC>Both (a) and (b)</AnswerChoiceC>
+    <AnswerChoiceD>None of the above.</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>27</QuestionNo>
+    <Question>Portable Class Libraries share source code across projects</Question>
+    <StudyPlan>Cross-Platform</StudyPlan>
+    <AnswerChoiceA>True</AnswerChoiceA>
+    <AnswerChoiceB>False</AnswerChoiceB>
+    <AnswerChoiceC>null</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>28</QuestionNo>
+    <Question>When you define your platform targets, you are selecting a _______</Question>
+    <StudyPlan>Cross-Platform</StudyPlan>
+    <AnswerChoiceA>Configuration</AnswerChoiceA>
+    <AnswerChoiceB>Platform Group </AnswerChoiceB>
+    <AnswerChoiceC>Profile</AnswerChoiceC>
+    <AnswerChoiceD>Grouping</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>29</QuestionNo>
+    <Question>Which of the following is not a platform supported by PCLs</Question>
+    <StudyPlan>Cross-Platform</StudyPlan>
+    <AnswerChoiceA>.NET 2.0</AnswerChoiceA>
+    <AnswerChoiceB>Windows Phone 8.0 (Silverlight)</AnswerChoiceB>
+    <AnswerChoiceC>Windows Phone 8.1</AnswerChoiceC>
+    <AnswerChoiceD>Windows Store Apps</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>30</QuestionNo>
+    <Question>What techniques can I use to add platform-specific code to a PCL?</Question>
+    <StudyPlan>Cross-Platform</StudyPlan>
+    <AnswerChoiceA>Dependency Injection (DI)</AnswerChoiceA>
+    <AnswerChoiceB>Service Locator</AnswerChoiceB>
+    <AnswerChoiceC> Publisher / Subscribe (events or messaging system) </AnswerChoiceC>
+    <AnswerChoiceD>Any of the above </AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>31</QuestionNo>
+    <Question>XAML can be associated to a code-behind file with the ______ tag</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>x:Code</AnswerChoiceA>
+    <AnswerChoiceB>x:Type</AnswerChoiceB>
+    <AnswerChoiceC>x:Class</AnswerChoiceC>
+    <AnswerChoiceD>x:Name </AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>32</QuestionNo>
+    <Question>A mapping for a custom namespace "Test" in a Data.dll assembly to an XML namespace named "local" would be:</Question>
+    <StudyPlan>Xamarin Forms </StudyPlan>
+    <AnswerChoiceA>xmlns:local="using Test"</AnswerChoiceA>
+    <AnswerChoiceB> xmlns:Test="clr-namespace:Test,assembly=Data.dll" </AnswerChoiceB>
+    <AnswerChoiceC>xmlns:local="clr-namespace=Test;assembly=Test"</AnswerChoiceC>
+    <AnswerChoiceD> xmlns:local="clr-namespace:Test;assembly=Data"</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>33</QuestionNo>
+    <Question>XAML uses ___________ to translate strings to object values for properties</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>Value Converters</AnswerChoiceA>
+    <AnswerChoiceB>Type Converters</AnswerChoiceB>
+    <AnswerChoiceC>Property Converters </AnswerChoiceC>
+    <AnswerChoiceD>String Converters </AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>34</QuestionNo>
+    <Question>Which is not a valid way to set the Padding property:</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>&lt;ContentPagePadding="5"&gt;</AnswerChoiceA>
+    <AnswerChoiceB> &lt;ContentPage Padding="5,20,5"&gt; </AnswerChoiceB>
+    <AnswerChoiceC>&lt;ContentPage.Padding&gt;&lt;Thickness Left="5" Top="20" Right="5" /&gt;&lt;/ContentPage.Padding&gt;</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>35</QuestionNo>
+    <Question>Putting an x:Name tag onto an element _________. (Select all that apply)</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>Creates a private field in the associated code behind file</AnswerChoiceA>
+    <AnswerChoiceB>Creates a protected field in the associated code behind file</AnswerChoiceB>
+    <AnswerChoiceC>Makes the element accessible to other things in XAML </AnswerChoiceC>
+    <AnswerChoiceD>Makes the element accessible in the code behind after InitializeComponent returns</AnswerChoiceD>
+    <CorrectAnswer>A,C,D</CorrectAnswer>
+    <QuestionType>Multiple Choice</QuestionType>
+  </record>
+  <record>
+    <QuestionNo>36</QuestionNo>
+    <Question>Event Handlers in code behind that are wired up in XAML must be public</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>True</AnswerChoiceA>
+    <AnswerChoiceB>False</AnswerChoiceB>
+    <AnswerChoiceC>null</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>37</QuestionNo>
+    <Question>To specify a platform-specific value in XAML you use _______. </Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>Device&lt;T&gt;</AnswerChoiceA>
+    <AnswerChoiceB>OnPlatform&lt;T&gt;</AnswerChoiceB>
+    <AnswerChoiceC>Platform&lt;T&gt;</AnswerChoiceC>
+    <AnswerChoiceD>x:Platform&lt;T&gt;</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>38</QuestionNo>
+    <Question>To share a value you can use ______ (select all that apply).</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>a) Resource Dictionary with {StaticResource}</AnswerChoiceA>
+    <AnswerChoiceB>Resource Dictionary with {x:Static}</AnswerChoiceB>
+    <AnswerChoiceC>Static properties in code and {x:Static} </AnswerChoiceC>
+    <AnswerChoiceD>Static properties in code and {StaticResource} </AnswerChoiceD>
+    <CorrectAnswer>A,C</CorrectAnswer>
+    <QuestionType>Multiple Choice</QuestionType>
+  </record>
+  <record>
+    <QuestionNo>39</QuestionNo>
+    <Question>Which one of these is not a system-provided markup extension?</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>{StaticResource}</AnswerChoiceA>
+    <AnswerChoiceB>{x:Null}</AnswerChoiceB>
+    <AnswerChoiceC> {ImageResource} </AnswerChoiceC>
+    <AnswerChoiceD>{x:Type}</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>40</QuestionNo>
+    <Question>To have a property value be set to "{Text" you would type: _______</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>"\{Text"</AnswerChoiceA>
+    <AnswerChoiceB>"{{Text"</AnswerChoiceB>
+    <AnswerChoiceC> "{Text" </AnswerChoiceC>
+    <AnswerChoiceD>"{}{Text"</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+		<QuestionNo>41</QuestionNo>
+		<Question>To retrieve the path to the root folder of the local data store within a Windows Phone app, use:</Question>
+		<StudyPlan>Data in Mobile</StudyPlan>
+		<AnswerChoiceA>Environment.GetFolderPath(Environment.SpecialFolder.Personal);</AnswerChoiceA>
+		<AnswerChoiceB>Environment.GetFolderPath(ApplicationData.Current.LocalFolder);</AnswerChoiceB>
+		<AnswerChoiceC>Windows.Storage.ApplicationData.Current.LocalFolder.Path;</AnswerChoiceC>
+		<AnswerChoiceD>null</AnswerChoiceD>
+		<CorrectAnswer>C</CorrectAnswer>
+	</record>
+  <record>
+    <QuestionNo>42</QuestionNo>
+    <Question>The recommended location for your data file is the same across platforms</Question>
+    <StudyPlan>Data in Mobile</StudyPlan>
+    <AnswerChoiceA>True</AnswerChoiceA>
+    <AnswerChoiceB>False</AnswerChoiceB>
+    <AnswerChoiceC>null</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>43</QuestionNo>
+    <Question>In your Xamarin.iOS app, you should always place content generated by the app within the Documents folder</Question>
+    <StudyPlan>Data in Mobile</StudyPlan>
+    <AnswerChoiceA>True</AnswerChoiceA>
+    <AnswerChoiceB>False</AnswerChoiceB>
+    <AnswerChoiceC>null</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>44</QuestionNo>
+    <Question>Using SQLite.Net PCL, which of the following creates a connection to a SQLite database:</Question>
+    <StudyPlan>Data in Mobile</StudyPlan>
+    <AnswerChoiceA>new SQLConnection(dbPath);</AnswerChoiceA>
+    <AnswerChoiceB>new SQLiteConnection(dbPath);</AnswerChoiceB>
+    <AnswerChoiceC>new SQLiteConnection(targetPlatform, dbPath)</AnswerChoiceC>
+    <AnswerChoiceD>new SQLConnection(targetPlatform, dbPath);</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>45</QuestionNo>
+    <Question>How can I ensure several operations happen atomically?</Question>
+    <StudyPlan>Data in Mobile</StudyPlan>
+    <AnswerChoiceA>Use RunAtomically</AnswerChoiceA>
+    <AnswerChoiceB>Use System.Transactions</AnswerChoiceB>
+    <AnswerChoiceC>Use RunInTransaction</AnswerChoiceC>
+    <AnswerChoiceD>None of the above</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>46</QuestionNo>
+    <Question>LINQ to SQLite.Net:</Question>
+    <StudyPlan>Data in Mobile</StudyPlan>
+    <AnswerChoiceA>Allows you to perform queries against a SQLite database</AnswerChoiceA>
+    <AnswerChoiceB> Translates language integrated queries to SQL queries behind the scenes</AnswerChoiceB>
+    <AnswerChoiceC>Returns a filtered result set back to the application</AnswerChoiceC>
+    <AnswerChoiceD>All of the above</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>47</QuestionNo>
+    <Question>Xamarin.Forms creates a single binary that can be deployed to Android, iOS or Windows Phone</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>True</AnswerChoiceA>
+    <AnswerChoiceB>False</AnswerChoiceB>
+    <AnswerChoiceC>null</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+		<QuestionNo>48</QuestionNo>
+		<Question>You must call _________ before using Xamarin.Forms</Question>
+		<StudyPlan>Xamarin Forms</StudyPlan>
+		<AnswerChoiceA>Forms.IniLalize</AnswerChoiceA>
+		<AnswerChoiceB> Forms.Init</AnswerChoiceB>
+		<AnswerChoiceC>Forms.Setup</AnswerChoiceC>
+		<AnswerChoiceD>No setup call necessary.</AnswerChoiceD>
+		<CorrectAnswer>B</CorrectAnswer>
+	</record>
+  <record>
+		<QuestionNo>49</QuestionNo>
+		<Question>To create a ViewController from a Page in iOS you call ___________.</Question>
+		<StudyPlan>iOS</StudyPlan>
+		<AnswerChoiceA>Page.CreateViewController</AnswerChoiceA>
+		<AnswerChoiceB>Page.GetViewController</AnswerChoiceB>
+		<AnswerChoiceC>Use the implicit conversion operator</AnswerChoiceC>
+		<AnswerChoiceD>Page.ViewController property</AnswerChoiceD>
+		<CorrectAnswer>A</CorrectAnswer>
+	</record>
+  <record>
+    <QuestionNo>50</QuestionNo>
+    <Question>The direction (left-to-right or top-to-bottom) a StackLayout organizes content is controlled by which property?</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>Style</AnswerChoiceA>
+    <AnswerChoiceB>Direction</AnswerChoiceB>
+    <AnswerChoiceC>Orientation</AnswerChoiceC>
+    <AnswerChoiceD>LayoutDirection</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>51</QuestionNo>
+    <Question>Which of these controls is not available in Xamarin.Forms? </Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>Button</AnswerChoiceA>
+    <AnswerChoiceB>DatePicker</AnswerChoiceB>
+    <AnswerChoiceC>ItemsControl </AnswerChoiceC>
+    <AnswerChoiceD>ListView</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>52</QuestionNo>
+    <Question>To adjust spacing between children when using the StackLayout container we can change the ______ property</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>Margin</AnswerChoiceA>
+    <AnswerChoiceB>Padding </AnswerChoiceB>
+    <AnswerChoiceC>Spacing</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>53</QuestionNo>
+    <Question>To supply a device-specific value for a property in the UI code, you can use the _______ method</Question>
+    <StudyPlan>Xamarin Platform</StudyPlan>
+    <AnswerChoiceA>DeviceSpecificValue&lt;T&gt;</AnswerChoiceA>
+    <AnswerChoiceB>Device.OnPlatform&lt;T&gt; </AnswerChoiceB>
+    <AnswerChoiceC>Device.Platform&lt;T&gt;</AnswerChoiceC>
+    <AnswerChoiceD>Device.ForPlatform&lt;T&gt; </AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>54</QuestionNo>
+    <Question>Master/Detail Navigation almost always requires the use of which class? </Question>
+    <StudyPlan>Navigation</StudyPlan>
+    <AnswerChoiceA>NavigationService</AnswerChoiceA>
+    <AnswerChoiceB>NavigationManager</AnswerChoiceB>
+    <AnswerChoiceC>INavigation </AnswerChoiceC>
+    <AnswerChoiceD>NavigationPage</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>55</QuestionNo>
+    <Question>To go back to the previous page programmatically, I would: </Question>
+    <StudyPlan>Navigation</StudyPlan>
+    <AnswerChoiceA>Call Page.Navigation.PopAsync</AnswerChoiceA>
+    <AnswerChoiceB>Call NavigationPage.PopAsync</AnswerChoiceB>
+    <AnswerChoiceC>Call PopAsync on the current Page</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>56</QuestionNo>
+    <Question>What kinds of data can I associate with a ListView</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>String Array</AnswerChoiceA>
+    <AnswerChoiceB>List&lt;string&gt;</AnswerChoiceB>
+    <AnswerChoiceC>Any enumerable type</AnswerChoiceC>
+    <AnswerChoiceD> Adapter&lt;T&gt;</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+		<QuestionNo>57</QuestionNo>
+		<Question>The source data is supplied through _____________ (Select all that apply).</Question>
+		<StudyPlan>Xamarin Forms</StudyPlan>
+		<AnswerChoiceA>DataContext property</AnswerChoiceA>
+		<AnswerChoiceB>Binding.Source property</AnswerChoiceB>
+		<AnswerChoiceC>BindingContext property</AnswerChoiceC>
+		<AnswerChoiceD>None of the above</AnswerChoiceD>
+		<CorrectAnswer>B, C</CorrectAnswer>
+	</record>
+  <record>
+    <QuestionNo>58</QuestionNo>
+    <Question>The source can be any object</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>True</AnswerChoiceA>
+    <AnswerChoiceB>False</AnswerChoiceB>
+    <AnswerChoiceC>null</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>59</QuestionNo>
+    <Question>The target can be any object</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>True</AnswerChoiceA>
+    <AnswerChoiceB>False</AnswerChoiceB>
+    <AnswerChoiceC>null</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>60</QuestionNo>
+    <Question>Model objects should perform the following steps when a property setter is called (pick the best answer):</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>Change the property and raise the PropertyChanged event</AnswerChoiceA>
+    <AnswerChoiceB>Check if the property is different, change the property and raise the PropertyChanged event</AnswerChoiceB>
+    <AnswerChoiceC> Check if the property is different, raise the PropertyChanged event and then change the property</AnswerChoiceC>
+    <AnswerChoiceD>None of these are correct</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>61</QuestionNo>
+    <Question>IValueConverter.Convert is called when going from_____to_____</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>Source &gt; Target</AnswerChoiceA>
+    <AnswerChoiceB> Target &gt; Source</AnswerChoiceB>
+    <AnswerChoiceC>null</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>62</QuestionNo>
+    <Question>To pass a binding-specific parameter to a value converter, you can set the ________ property</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>Parameter</AnswerChoiceA>
+    <AnswerChoiceB>ConversionParameter </AnswerChoiceB>
+    <AnswerChoiceC>ConverterParameter </AnswerChoiceC>
+    <AnswerChoiceD>BindingParameter</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>63</QuestionNo>
+    <Question>Binding.StringFormat can be used to convert an integer type to a double type</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>True</AnswerChoiceA>
+    <AnswerChoiceB>False</AnswerChoiceB>
+    <AnswerChoiceC>null</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>64</QuestionNo>
+    <Question>ListView can use a LINQ expression as it's data source</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>True</AnswerChoiceA>
+    <AnswerChoiceB>False</AnswerChoiceB>
+    <AnswerChoiceC>null</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>65</QuestionNo>
+    <Question>If you intend to alter the collection providing the data, you should use a ___________ to make sure the UI is notified about the changes</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>List&lt;T&gt;</AnswerChoiceA>
+    <AnswerChoiceB>NotifyableCollection&lt;T&gt;</AnswerChoiceB>
+    <AnswerChoiceC> ObservableCollection&lt;T&gt;</AnswerChoiceC>
+    <AnswerChoiceD>Any collection type will work</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>66</QuestionNo>
+    <Question>To add a new item to the ListView you can _________.</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>ListView.Items.Add(...)</AnswerChoiceA>
+    <AnswerChoiceB>ListView.ItemsSource.Add(...);</AnswerChoiceB>
+    <AnswerChoiceC>ListView.Add(...); </AnswerChoiceC>
+    <AnswerChoiceD>None of the above</AnswerChoiceD>
+  </record>
+  <record>
+    <QuestionNo>67</QuestionNo>
+    <Question>Data Templates can be defined in code or XAML</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>True</AnswerChoiceA>
+    <AnswerChoiceB>False</AnswerChoiceB>
+    <AnswerChoiceC>null</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>68</QuestionNo>
+    <Question>For ListView, the Data Template must define a _______ type</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>View</AnswerChoiceA>
+    <AnswerChoiceB>Visual </AnswerChoiceB>
+    <AnswerChoiceC>Cell</AnswerChoiceC>
+    <AnswerChoiceD>ViewCell</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>69</QuestionNo>
+    <Question>Which is not a built-in Cell type?</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>TextCell</AnswerChoiceA>
+    <AnswerChoiceB>ImageCell</AnswerChoiceB>
+    <AnswerChoiceC>SliderCell</AnswerChoiceC>
+    <AnswerChoiceD>All of these are available</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>70</QuestionNo>
+    <Question>Key to all these patterns is _________.</Question>
+    <StudyPlan>Cross-Platform</StudyPlan>
+    <AnswerChoiceA>Custom attributes</AnswerChoiceA>
+    <AnswerChoiceB>Containers</AnswerChoiceB>
+    <AnswerChoiceC>Singletons</AnswerChoiceC>
+    <AnswerChoiceD> Abstractions</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>71</QuestionNo>
+    <Question>Service Locator is where ___________.</Question>
+    <StudyPlan>Cross-Platform</StudyPlan>
+    <AnswerChoiceA>Services are found and set into properties on the client</AnswerChoiceA>
+    <AnswerChoiceB>Client request specific abstraction through a shared locator</AnswerChoiceB>
+    <AnswerChoiceC>Client creates service directly</AnswerChoiceC>
+    <AnswerChoiceD>You use Accio summoning charm to create the service</AnswerChoiceD>
+  </record>
+  <record>
+    <QuestionNo>72</QuestionNo>
+    <Question>To inject dependencies the IoC container will often need to create the type that uses those dependencies</Question>
+    <StudyPlan>Cross-Platform</StudyPlan>
+    <AnswerChoiceA>True</AnswerChoiceA>
+    <AnswerChoiceB>False</AnswerChoiceB>
+    <AnswerChoiceC>null</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>73</QuestionNo>
+    <Question>The best technique to manage dependencies is ________</Question>
+    <StudyPlan>Cross-Platform</StudyPlan>
+    <AnswerChoiceA>Factory Pattern</AnswerChoiceA>
+    <AnswerChoiceB>Service Locator Pattern</AnswerChoiceB>
+    <AnswerChoiceC>Dependency Injection </AnswerChoiceC>
+    <AnswerChoiceD> Depends on the project, team, and personal preference</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>74</QuestionNo>
+    <Question>When using MVVM, the ViewModel should be platform-specific and created for each specific platform you want to support</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>True</AnswerChoiceA>
+    <AnswerChoiceB>False</AnswerChoiceB>
+    <AnswerChoiceC>null</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>75</QuestionNo>
+    <Question>What are the members of the INotifyPropertyChanged interface</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>PropertyChanged event and RaisePropertyChanged method.</AnswerChoiceA>
+    <AnswerChoiceB> RaisePropertyChanged method</AnswerChoiceB>
+    <AnswerChoiceC>PropertyChanged event</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>76</QuestionNo>
+    <Question>Some of the disadvantages to MVVM are: (pick all that apply)</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>Requires additional infrastructure</AnswerChoiceA>
+    <AnswerChoiceB>Reduces the testability of the logic</AnswerChoiceB>
+    <AnswerChoiceC>Can end up duplicating property definitions between model and VM</AnswerChoiceC>
+    <AnswerChoiceD>It can only be used with XAML</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+		<QuestionNo>77</QuestionNo>
+		<Question>Commands are not supported on which control?</Question>
+		<StudyPlan>Xamarin Forms</StudyPlan>
+		<AnswerChoiceA>Button</AnswerChoiceA>
+		<AnswerChoiceB>Switch</AnswerChoiceB>
+		<AnswerChoiceC>MenuItem</AnswerChoiceC>
+		<AnswerChoiceD> Trick question - commands are supported on all of them!</AnswerChoiceD>
+		<CorrectAnswer>A,C</CorrectAnswer>
+	</record>
+  <record>
+    <QuestionNo>78</QuestionNo>
+    <Question>Commands are described through ___________</Question>
+    <StudyPlan>Xamarin Forms</StudyPlan>
+    <AnswerChoiceA>IDelegateCommand</AnswerChoiceA>
+    <AnswerChoiceB>DelegateCommand</AnswerChoiceB>
+    <AnswerChoiceC> ICommand </AnswerChoiceC>
+    <AnswerChoiceD>Command</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>79</QuestionNo>
+    <Question>How can you ensure there is a map application present?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>StartActivity</AnswerChoiceA>
+    <AnswerChoiceB>ActionView</AnswerChoiceB>
+    <AnswerChoiceC>Android.Net.Uri.Parse</AnswerChoiceC>
+    <AnswerChoiceD>ResolveActivity</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>80</QuestionNo>
+    <Question>What optional component must be included in the Android SDK Manager? </Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>Google Play Services</AnswerChoiceA>
+    <AnswerChoiceB>Android Support Repository </AnswerChoiceB>
+    <AnswerChoiceC>GoogleRepository</AnswerChoiceC>
+    <AnswerChoiceD>Google Play Licensing Library</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>81</QuestionNo>
+    <Question>Which emulator images have Play Services pre-installed? </Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>Android SDK Build-tools</AnswerChoiceA>
+    <AnswerChoiceB>Google APIs (x86 System Image)</AnswerChoiceB>
+    <AnswerChoiceC>GoogleAPIs(ARMSystemImage) </AnswerChoiceC>
+    <AnswerChoiceD>SDK Platform</AnswerChoiceD>
+    <CorrectAnswer>B,C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>82</QuestionNo>
+    <Question>You can use the same API key on more than one development machine (True or False)?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>True</AnswerChoiceA>
+    <AnswerChoiceB>False</AnswerChoiceB>
+    <AnswerChoiceC>null</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>83</QuestionNo>
+    <Question>How does Google Play Services authenticate your application?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>Shared password</AnswerChoiceA>
+    <AnswerChoiceB>API key + SHA1 keystore fingerprint + package name</AnswerChoiceB>
+    <AnswerChoiceC>X.509certificate</AnswerChoiceC>
+    <AnswerChoiceD>No authentication necessary</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>84</QuestionNo>
+    <Question>Which permissions must be added to the Android manifest? (Select all that apply)</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>INTERNET</AnswerChoiceA>
+    <AnswerChoiceB>ACCESS_NETWORK_STATE</AnswerChoiceB>
+    <AnswerChoiceC>ACCESS_FINE_LOCATION</AnswerChoiceC>
+    <AnswerChoiceD>WRITE_EXTERNAL_STORAGE</AnswerChoiceD>
+    <CorrectAnswer>A,B,D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>85</QuestionNo>
+    <Question>What classes are used to add the map visualization into the UI screen?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>MapView</AnswerChoiceA>
+    <AnswerChoiceB>MapFragment </AnswerChoiceB>
+    <AnswerChoiceC>GoogleMap </AnswerChoiceC>
+    <AnswerChoiceD>Both A and B</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>86</QuestionNo>
+    <Question>Which class should be used to host a map in a fragment?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>OnCreateView</AnswerChoiceA>
+    <AnswerChoiceB>MapFragment</AnswerChoiceB>
+    <AnswerChoiceC>FindViewByID </AnswerChoiceC>
+    <AnswerChoiceD>MapView</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>87</QuestionNo>
+    <Question>How were these marker images created?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>AddMarker</AnswerChoiceA>
+    <AnswerChoiceB>MarkerOptions </AnswerChoiceB>
+    <AnswerChoiceC>Both A and B</AnswerChoiceC>
+    <AnswerChoiceD>None of the Above</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>88</QuestionNo>
+    <Question>Google Maps raises the InfoWindowClick event when the user taps on a displayed info window popup for a marker.</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>True</AnswerChoiceA>
+    <AnswerChoiceB>False</AnswerChoiceB>
+    <AnswerChoiceC>null</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>89</QuestionNo>
+    <Question>What does the CameraPosition identify?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>Tilt</AnswerChoiceA>
+    <AnswerChoiceB>Zoom</AnswerChoiceB>
+    <AnswerChoiceC>Target</AnswerChoiceC>
+    <AnswerChoiceD>All the above</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>90</QuestionNo>
+    <Question>What class do you use to create an update request?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>CameraUpdateFactory</AnswerChoiceA>
+    <AnswerChoiceB> CameraUpdate </AnswerChoiceB>
+    <AnswerChoiceC>CameraPosition </AnswerChoiceC>
+    <AnswerChoiceD>None of the above</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>91</QuestionNo>
+    <Question>What is a density independent pixel (dp or dip)?</Question>
+    <StudyPlan>General</StudyPlan>
+    <AnswerChoiceA>The number of pixels in any given area of the screen.</AnswerChoiceA>
+    <AnswerChoiceB>A virtual unit of measure that allows layouts to be designed independent of screen density</AnswerChoiceB>
+    <AnswerChoiceC>The amount of space available for display in an application</AnswerChoiceC>
+    <AnswerChoiceD>The total number of pixels on a screen</AnswerChoiceD>
+    <CorrectAnswer>C*</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>92</QuestionNo>
+    <Question>Why is it important to reuse cell views in an Android Base Adapter?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>To conserve memory</AnswerChoiceA>
+    <AnswerChoiceB>Because adapters can only accommodate a maximum of eight rows at a time</AnswerChoiceB>
+    <AnswerChoiceC>Inflating views is very inefficient and drains the battery</AnswerChoiceC>
+    <AnswerChoiceD>All of the above.</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>93</QuestionNo>
+    <Question>Xamarin.Android’s ListView requires the following to be assigned as its Source:</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>A subclass of BaseAdapter</AnswerChoiceA>
+    <AnswerChoiceB>An ArrayAdapter</AnswerChoiceB>
+    <AnswerChoiceC> A CursorAdapter</AnswerChoiceC>
+    <AnswerChoiceD>Any of the above</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>94</QuestionNo>
+    <Question>The view used for a row in an Android ListView can be:</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>A built-in Android resource</AnswerChoiceA>
+    <AnswerChoiceB>A custom Android XML layout</AnswerChoiceB>
+    <AnswerChoiceC>A View subclass</AnswerChoiceC>
+    <AnswerChoiceD>Any of the above</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>95</QuestionNo>
+    <Question>Displaying an index indicator while fast-scrolling in Android requires:</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>FastScrollEnabled be set to true</AnswerChoiceA>
+    <AnswerChoiceB>The ISectionIndexer interface implemented in your adapter</AnswerChoiceB>
+    <AnswerChoiceC> Enough rows that scrolling is required</AnswerChoiceC>
+    <AnswerChoiceD>All of the above</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>96</QuestionNo>
+    <Question>What is an Intent in Xamarin.Android?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>Intent are messages of the Operating System that may contain data and instruct it to do something, such as launch a new Activity.</AnswerChoiceA>
+    <AnswerChoiceB>An intent is an object that can be used to bypass the Activity lifecycle.</AnswerChoiceB>
+    <AnswerChoiceC> Intents register components that make up the application</AnswerChoiceC>
+    <AnswerChoiceD>Intents register an Activity together with the class definition so multiscreen application can be created</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>98</QuestionNo>
+    <Question>What method do you call to launch a new screen in Xamarin.Android?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>StartActivity</AnswerChoiceA>
+    <AnswerChoiceB>SetContentView</AnswerChoiceB>
+    <AnswerChoiceC>InflateScreen</AnswerChoiceC>
+    <AnswerChoiceD>LaunchScreen</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>99</QuestionNo>
+    <Question>The purpose of the Xamarin.Android [ActivityAttribute] is to…</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>Register the Activity with the AndroidManifest</AnswerChoiceA>
+    <AnswerChoiceB>Let the application know if the Activity is to be Launched at startup</AnswerChoiceB>
+    <AnswerChoiceC>Help Android locate the Activity</AnswerChoiceC>
+    <AnswerChoiceD>All of the above</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>100</QuestionNo>
+    <Question>To pass data between Android Activities, you use an</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>Intent</AnswerChoiceA>
+    <AnswerChoiceB>Service</AnswerChoiceB>
+    <AnswerChoiceC>Context</AnswerChoiceC>
+    <AnswerChoiceD>You cannot pass data between Activities</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+    <Rationale>Using Intent to pass data</Rationale>
+  </record>
+  <record>
+    <QuestionNo>101</QuestionNo>
+    <Question>What is an Android Bundle?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>A dictionary for storing and passing serialized information between Activities.</AnswerChoiceA>
+    <AnswerChoiceB>A special array that keeps track of all running Activities in an application, whether in the background or the foreground.</AnswerChoiceB>
+    <AnswerChoiceC>A compiled Android application.</AnswerChoiceC>
+    <AnswerChoiceD>A collection of all resources and assets in Android application</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>102</QuestionNo>
+    <Question>Which of the following best describes the responsibilities of the Context object in Android application?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>To launch Activities and manage screen states</AnswerChoiceA>
+    <AnswerChoiceB>Keep track of the API levels supported</AnswerChoiceB>
+    <AnswerChoiceC>A reference to the current application and provides a mechanism for accessing the Android system</AnswerChoiceC>
+    <AnswerChoiceD>To load resources and assets that may be required or requested by an application</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>103</QuestionNo>
+    <Question>What type of items should be stored in the Asset folder of a Xamarin.Android application?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>Declarative layout files that are used to create user interfaces.</AnswerChoiceA>
+    <AnswerChoiceB>Source code files that will be compiled at runtime</AnswerChoiceB>
+    <AnswerChoiceC>Application resources such as strings and images.</AnswerChoiceC>
+    <AnswerChoiceD> Any file that is not a resource used by Android but that you would like compiled into the application</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>104</QuestionNo>
+    <Question>When creating an Android layout with XML, what does the syntax android:id=@+id/helloLabel” mean?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>Nothing special – it is just there to help with identifying the element when manually editing the layout file.</AnswerChoiceA>
+    <AnswerChoiceB>That is invalid syntax.</AnswerChoiceB>
+    <AnswerChoiceC>It tells the Android parser to generate new resource ID for the element with the name helloLabel</AnswerChoiceC>
+    <AnswerChoiceD>Tells Android to display a string resource name helloLabel in the View.</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>105</QuestionNo>
+    <Question>Where should string resources be stored in a Xamarin.Android project?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>Constants inside the file Activity1.cs</AnswerChoiceA>
+    <AnswerChoiceB> As elements in the file /Resources/Values/strings.xml</AnswerChoiceB>
+    <AnswerChoiceC>As elements in the file /Assets/strings.xml</AnswerChoiceC>
+    <AnswerChoiceD>Hard coded in each C# class</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>106</QuestionNo>
+    <Question>What folder should Android application resources be placed into?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>Resources</AnswerChoiceA>
+    <AnswerChoiceB>Asset</AnswerChoiceB>
+    <AnswerChoiceC>Obj</AnswerChoiceC>
+    <AnswerChoiceD>The root directory of the project</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>107</QuestionNo>
+    <Question>What are default resources in Android?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>Any file that is placed in the Assets folder of a Xamarin.Android project</AnswerChoiceA>
+    <AnswerChoiceB>Resources that should be used regardless of device configuration, or where there are no alternative resources that match device configuration</AnswerChoiceB>
+    <AnswerChoiceC>Resources that are provided by Android and shared across Android applications</AnswerChoiceC>
+    <AnswerChoiceD>Resources that have been designed for a specific configurations</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+    <Rationale>Resources Overview</Rationale>
+  </record>
+  <record>
+    <QuestionNo>108</QuestionNo>
+    <Question>Which line of code will load the Android XML layout file and display it in a view?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>SetContentView(Resource.Layout.main_layout);</AnswerChoiceA>
+    <AnswerChoiceB>AddView(Resource.Layout.main_layout);</AnswerChoiceB>
+    <AnswerChoiceC>SetLayoutView(Resource.Layout.main_layout);</AnswerChoiceC>
+    <AnswerChoiceD>SetContentView(Resource.GetLayout(“main_layout”));</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>109</QuestionNo>
+    <Question>What is the file extension of a compiled Android application?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>EXE</AnswerChoiceA>
+    <AnswerChoiceB>DLL</AnswerChoiceB>
+    <AnswerChoiceC>APP</AnswerChoiceC>
+    <AnswerChoiceD>APK</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>110</QuestionNo>
+    <Question>Which is the first method typically invoked in an Activity?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>OnCreate()</AnswerChoiceA>
+    <AnswerChoiceB>OnStart</AnswerChoiceB>
+    <AnswerChoiceC>OnResume()</AnswerChoiceC>
+    <AnswerChoiceD>Main()</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>111</QuestionNo>
+    <Question>What is the purpose of an Adapter in Android</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>Create a View that will be displayed as row in a ListView</AnswerChoiceA>
+    <AnswerChoiceB>Convert data from SQLLite database to business objects</AnswerChoiceB>
+    <AnswerChoiceC>Allows data to be shared between Android applications</AnswerChoiceC>
+    <AnswerChoiceD>Converts Intents into data that can be displayed in an Activity</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+    <Rationale>Adapter</Rationale>
+  </record>
+  <record>
+    <QuestionNo>112</QuestionNo>
+    <Question>What is an Activity in Android?</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>A user interface for a single screen in an Android application.</AnswerChoiceA>
+    <AnswerChoiceB> A task that runs in the background of Android application</AnswerChoiceB>
+    <AnswerChoiceC>An Android component that manages structured access to data</AnswerChoiceC>
+    <AnswerChoiceD>Miniature application views that can be embedded in other application</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+    <Rationale>Activity</Rationale>
+  </record>
+  <record>
+    <QuestionNo>113</QuestionNo>
+    <Question>The Android class BaseAdapter provides this virtual method which must be overridden by subclasses to return a view for ListView:</Question>
+    <StudyPlan>Android</StudyPlan>
+    <AnswerChoiceA>GetItemId</AnswerChoiceA>
+    <AnswerChoiceB>GetView</AnswerChoiceB>
+    <AnswerChoiceC>NewView</AnswerChoiceC>
+    <AnswerChoiceD>CreateView</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>114</QuestionNo>
+    <Question>Which method is implemented to respond to a user touching a row in a UITableView</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>RowsInSection</AnswerChoiceA>
+    <AnswerChoiceB>ViewDidLoad</AnswerChoiceB>
+    <AnswerChoiceC>RowsSelected</AnswerChoiceC>
+    <AnswerChoiceD>GetCell</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>115</QuestionNo>
+    <Question>The NSIndexPath class includes:</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>Only row information</AnswerChoiceA>
+    <AnswerChoiceB>Only section information</AnswerChoiceB>
+    <AnswerChoiceC>A single row and section</AnswerChoiceC>
+    <AnswerChoiceD>Multiple rows and sections</AnswerChoiceD>
+    <CorrectAnswer>D*</CorrectAnswer>
+    <Rationale>NSIndexPath iOS, NSIndexPath MonoTouch</Rationale>
+  </record>
+  <record>
+		<QuestionNo>116</QuestionNo>
+		<Question>Headers and Footers in a UITableView:</Question>
+		<StudyPlan>iOS</StudyPlan>
+		<AnswerChoiceA>Are always letters of the alphabet from A –Z</AnswerChoiceA>
+		<AnswerChoiceB> Are enabled by overriding methods </AnswerChoiceB>
+		<AnswerChoiceC>Must both be implemented at the same time</AnswerChoiceC>
+		<AnswerChoiceD>None of the above</AnswerChoiceD>
+		<CorrectAnswer>C or D*</CorrectAnswer>
+		<Rationale>Header and Footers in a TableCellView</Rationale>
+	</record>
+  <record>
+    <QuestionNo>117</QuestionNo>
+    <Question>It is possible to use Xamarin.iOS to develop iOS application by using:</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>Windows or Linux or OS X with Xamarin Studio, Windows with Visual Studio Professional 2010 or higher</AnswerChoiceA>
+    <AnswerChoiceB>OS X with Xamarin Studio, or Widows with Visual Studio Professional 2010 or higher</AnswerChoiceB>
+    <AnswerChoiceC>Windows or OS X with Xamarin Studio, Windows with Visual Studio Professional 2010 or higher</AnswerChoiceC>
+    <AnswerChoiceD>A text editor and command line tools on Windows, Linux, or OS X</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>118</QuestionNo>
+    <Question>What is the “Component” folder used for in Xamarin projects?</Question>
+    <StudyPlan>Cross-Platform</StudyPlan>
+    <AnswerChoiceA>It contains application resources such as images</AnswerChoiceA>
+    <AnswerChoiceB> It contains all of the referenced assemblies used to build the project</AnswerChoiceB>
+    <AnswerChoiceC>It provides access to pre-built components from Xamarin and third-party developers and allows you to add them to your project</AnswerChoiceC>
+    <AnswerChoiceD>It is the folder for C# source files that are included in a project through file linking</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>119</QuestionNo>
+    <Question>Xamarin Studio uses solutions and projects like which of the following?</Question>
+    <StudyPlan>Cross-Platform</StudyPlan>
+    <AnswerChoiceA>Xcode</AnswerChoiceA>
+    <AnswerChoiceB>Visual Studio</AnswerChoiceB>
+    <AnswerChoiceC>Exclipse</AnswerChoiceC>
+    <AnswerChoiceD>IntelliJ</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+      <QuestionNo>120</QuestionNo>
+      <Question>Applying the RegisterAttribute to a class in Xamarin.iOS:</Question>
+      <StudyPlan>Cross-Platform</StudyPlan>
+      <AnswerChoiceA>Causes it to be archived in a xib file</AnswerChoiceA>
+      <AnswerChoiceB>Make it serializable</AnswerChoiceB>
+      <AnswerChoiceC>Make it available to the Objective-C runtime</AnswerChoiceC>
+      <AnswerChoiceD>Prevents any instance of it from being garbage collected</AnswerChoiceD>
+      <CorrectAnswer>C*</CorrectAnswer>
+      <Rationale>Binding Attribute</Rationale>
+    </record>
+  <record>
+    <QuestionNo>121</QuestionNo>
+    <Question>The title displayed in a UINavigationBar comes from:</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>A value in the Info.plist</AnswerChoiceA>
+    <AnswerChoiceB>The AppDelegate </AnswerChoiceB>
+    <AnswerChoiceC>The Title property of the current UIViewController on screen</AnswerChoiceC>
+    <AnswerChoiceD>The Name property of the current UIViewController on screen</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>122</QuestionNo>
+    <Question>An IOS Storyboard allows</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>Visual WYSIWYG editing of a user interface</AnswerChoiceA>
+    <AnswerChoiceB>Adding controllers to an application at design time</AnswerChoiceB>
+    <AnswerChoiceC>Seques to transition between controllers</AnswerChoiceC>
+    <AnswerChoiceD>All of the above</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>123</QuestionNo>
+    <Question>A UITableViewController is:</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>A subclass of UIViewController with a UITableView already set as the view</AnswerChoiceA>
+    <AnswerChoiceB>Adding controllers to an application at design time</AnswerChoiceB>
+    <AnswerChoiceC>A Segue to transition between controllers</AnswerChoiceC>
+    <AnswerChoiceD>None of the above</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>124</QuestionNo>
+    <Question>What must you subclass to provide data for a UITableViewController?</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>UITableViewCell</AnswerChoiceA>
+    <AnswerChoiceB> UITableView</AnswerChoiceB>
+    <AnswerChoiceC>UITableViewSource</AnswerChoiceC>
+    <AnswerChoiceD>None of the above</AnswerChoiceD>
+    <CorrectAnswer>C*</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>125</QuestionNo>
+    <Question>In Xamarin.iOS, the cell reuse identifier passed to DequeueResuableCell should</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>Always be the same value for all cells in a table</AnswerChoiceA>
+    <AnswerChoiceB>Be the same value for all cells with the same layout in a table</AnswerChoiceB>
+    <AnswerChoiceC>Be different for each row (like a primary key)</AnswerChoiceC>
+    <AnswerChoiceD>Be different for each row (sequential, started from 0)</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>126</QuestionNo>
+    <Question>How would you customize a table cell in Xamarin.iOS?</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>Use one of the built-in styles</AnswerChoiceA>
+    <AnswerChoiceB>Use Storyboard Designer</AnswerChoiceB>
+    <AnswerChoiceC>Create a custom cell</AnswerChoiceC>
+    <AnswerChoiceD>All of the above</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>127</QuestionNo>
+    <Question>Which class abstracts UITableViewDataSource and UITableViewDelegate?</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>UITableViewController</AnswerChoiceA>
+    <AnswerChoiceB>UITableView</AnswerChoiceB>
+    <AnswerChoiceC>UITableViewSource</AnswerChoiceC>
+    <AnswerChoiceD>NSIndexPath</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>128</QuestionNo>
+    <Question>To access the UIApplication singleton you use:</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>UIApplication.getInstance()</AnswerChoiceA>
+    <AnswerChoiceB>UIApplication.Instance</AnswerChoiceB>
+    <AnswerChoiceC>UIApplication.Current</AnswerChoiceC>
+    <AnswerChoiceD>UIApplication.SharedApplication</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>129</QuestionNo>
+    <Question>What is the purpose of an AppDelegate in Xamarin.iOS?</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>It contains application settings</AnswerChoiceA>
+    <AnswerChoiceB>It provides the user interface for an application.</AnswerChoiceB>
+    <AnswerChoiceC>It creates the window and handles application events</AnswerChoiceC>
+    <AnswerChoiceD> It is the main window for an application</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>130</QuestionNo>
+    <Question>The component in the Model View Controller pattern that defines the user interface in iOS is</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>The Controller</AnswerChoiceA>
+    <AnswerChoiceB> The Model</AnswerChoiceB>
+    <AnswerChoiceC> The View</AnswerChoiceC>
+    <AnswerChoiceD> All of the above</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>131</QuestionNo>
+    <Question>Universal iOS applications create:</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>Separate executables for iPhone and iPad</AnswerChoiceA>
+    <AnswerChoiceB> A single executable</AnswerChoiceB>
+    <AnswerChoiceC>Two executables contained in a single zip file</AnswerChoiceC>
+    <AnswerChoiceD>iPad-only applications</AnswerChoiceD>
+    <CorrectAnswer>B*</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>132</QuestionNo>
+    <Question>The transitions between scenes in an iOS Storyboard are managed with:</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>Code</AnswerChoiceA>
+    <AnswerChoiceB>Outlets</AnswerChoiceB>
+    <AnswerChoiceC>Actions</AnswerChoiceC>
+    <AnswerChoiceD>Segues</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>133</QuestionNo>
+    <Question>A Xamarin.iOS application’s user interface can be built</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>With Xib files</AnswerChoiceA>
+    <AnswerChoiceB>With Storyboards</AnswerChoiceB>
+    <AnswerChoiceC>Completely in code</AnswerChoiceC>
+    <AnswerChoiceD>All of the above</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>134</QuestionNo>
+    <Question>Which class manages a stack of controllers in Xamarin.iOS?</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>UINavigationController</AnswerChoiceA>
+    <AnswerChoiceB>UIView</AnswerChoiceB>
+    <AnswerChoiceC>UIViewController</AnswerChoiceC>
+    <AnswerChoiceD>UINavigationItem</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>135</QuestionNo>
+    <Question>All Xamarin.iOS applications have at least one UIWindow</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>True</AnswerChoiceA>
+    <AnswerChoiceB>False</AnswerChoiceB>
+    <AnswerChoiceC>null</AnswerChoiceC>
+    <AnswerChoiceD>null</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>136</QuestionNo>
+    <Question>Every Xamarin.iOS application must have:</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>An AppDelegate</AnswerChoiceA>
+    <AnswerChoiceB>A model class</AnswerChoiceB>
+    <AnswerChoiceC>A storyboard</AnswerChoiceC>
+    <AnswerChoiceD>A Xib file</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>137</QuestionNo>
+    <Question>Which of the following raises user interface events in Xamarin.iOS?</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>The model</AnswerChoiceA>
+    <AnswerChoiceB>The view</AnswerChoiceB>
+    <AnswerChoiceC>The controller</AnswerChoiceC>
+    <AnswerChoiceD>All of the above</AnswerChoiceD>
+    <CorrectAnswer>B</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>138</QuestionNo>
+    <Question>When you assign a name to a control in the iOS Storyboard designer, it creates a property which will be tied to the attribute that is applied to the property in the code behind file?</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>[Register]</AnswerChoiceA>
+    <AnswerChoiceB>[Action]</AnswerChoiceB>
+    <AnswerChoiceC>[Outlet]</AnswerChoiceC>
+    <AnswerChoiceD>[DesignerProperty]</AnswerChoiceD>
+    <CorrectAnswer>C</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>139</QuestionNo>
+    <Question>The Xamarin.iOS class that receives application-wide callbacks is called:</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>UIApplicationDelegate</AnswerChoiceA>
+    <AnswerChoiceB> UIViewController</AnswerChoiceB>
+    <AnswerChoiceC>UIView</AnswerChoiceC>
+    <AnswerChoiceD>UIApplication</AnswerChoiceD>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>140</QuestionNo>
+    <Question>Xamarin.iOS applications can use which of the following?</Question>
+    <StudyPlan>iOS</StudyPlan>
+    <AnswerChoiceA>NET Base Class Library classes</AnswerChoiceA>
+    <AnswerChoiceB>CocoaTouch foundation framework class</AnswerChoiceB>
+    <AnswerChoiceC>Custom Objective-C classes bound in C#</AnswerChoiceC>
+    <AnswerChoiceD>All of the above</AnswerChoiceD>
+    <CorrectAnswer>D</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>141</QuestionNo>
+    <Question>Which of the following should I verify before submitting my app (select all that apply)?</Question>
+    <StudyPlan>Cross-Platform</StudyPlan>
+    <AnswerChoiceA>It's a release build with optimizations turned on</AnswerChoiceA>
+    <AnswerChoiceB>It handles error conditions, such as network unavailable</AnswerChoiceB>
+    <AnswerChoiceC>It is under 1M in size</AnswerChoiceC>
+    <AnswerChoiceD>It runs on my minimum OS version and target device</AnswerChoiceD>
+    <AnswerChoiceE>It includes all icon and splash screen sizes</AnswerChoiceE>
+    <AnswerChoiceF>It uses an activity indicator on the splash screen</AnswerChoiceF>
+    <CorrectAnswer>A,B,D,E</CorrectAnswer>
+  </record>
+  <record>
+    <QuestionNo>142</QuestionNo>
+    <Question>Which SDK version should I target?</Question>
+    <StudyPlan>Cross-Platform</StudyPlan>
+    <AnswerChoiceA>You should always build with the latest production SDK, but you canadjust the minimum target as necessary</AnswerChoiceA>
+    <AnswerChoiceB>You should build against the lowest possible SDK version for compatibility</AnswerChoiceB>
+    <AnswerChoiceC>Apple requires you build and set your minimum target to the latest SDK version</AnswerChoiceC>
+    <CorrectAnswer>A</CorrectAnswer>
+  </record>
+</masterquestiontemplate>

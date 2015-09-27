@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ExamPrep;assembly=ExamPrep"
+             x:Class="ExamPrep.ExamRandomSessionChoice"
+             Title="Exam Question Mode "
+             BindingContext="{x:Static local:AppMenuFactory.ExamMenuList}"
+             BackgroundColor="White" >
+ <StackLayout x:Name="Main" VerticalOptions="FillAndExpand" Orientation="Vertical">
+   <StackLayout.Padding>
+     <OnPlatform x:TypeArguments="Thickness">
+       <OnPlatform.iOS>
+         0
+       </OnPlatform.iOS>
+       <OnPlatform.Android>
+         10,8,10,8
+       </OnPlatform.Android>
+       <OnPlatform.WinPhone>
+         0, 0, 0, 0
+       </OnPlatform.WinPhone>
+     </OnPlatform>
+   </StackLayout.Padding>
+  <StackLayout x:Name="Inner" VerticalOptions="FillAndExpand" Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+      <ListView x:Name="AllStudyPlan" ItemsSource="{Binding .}"
+                    ItemTapped="OnItemTapped"
+                    ItemSelected="OnItemSelected" BackgroundColor="White" HasUnevenRows="True" SeparatorColor="Gray" SeparatorVisibility="Default">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell >
+              <!--Height="52"-->
+              <ViewCell.View>
+                <StackLayout VerticalOptions="FillAndExpand" >
+                  <StackLayout.Padding>
+                    <OnPlatform x:TypeArguments="Thickness">
+                      <OnPlatform.iOS>
+                        15, 15, 15, 15
+                      </OnPlatform.iOS>
+                      <OnPlatform.Android>
+                        0, 5, 0, 0.5
+                      </OnPlatform.Android>
+                      <OnPlatform.WinPhone>
+                        0, 0, 0, 0
+                      </OnPlatform.WinPhone>
+                    </OnPlatform>
+                  </StackLayout.Padding>
+                  <Grid>
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="*"></ColumnDefinition>
+                      <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                  <Label Text="{Binding ModeName}"   TextColor="#47494A" FontAttributes="Bold"  >
+                    <Label.FontFamily>
+                      <OnPlatform x:TypeArguments="x:String">
+                        <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                        <OnPlatform.Android>Helvetica Neue</OnPlatform.Android>
+                        <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                      </OnPlatform>
+                    </Label.FontFamily>
+                    <Label.FontSize>
+                      <OnPlatform x:TypeArguments="x:Double">
+                        <OnPlatform.iOS>20</OnPlatform.iOS>
+                        <OnPlatform.Android>20</OnPlatform.Android>
+                        <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                      </OnPlatform>
+                    </Label.FontSize>
+                  
+                  </Label>
+                    <Image Source="tap.png" HorizontalOptions="End" HeightRequest="20" VerticalOptions="Start" Grid.Column="1"></Image>
+                    </Grid>
+                  </StackLayout>
+              </ViewCell.View>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+  </StackLayout>
+  </StackLayout>
+</ContentPage>

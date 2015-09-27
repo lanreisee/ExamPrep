@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ExamPrep;assembly=ExamPrep"
+              Title="QandA"
+             x:Class="ExamPrep.ExamQuestionPage">
+  <ContentPage.Resources>
+  <ResourceDictionary>
+    <local:BoolToColorConverter x:Key="ColorConverter"/>
+    <local:StringToBoolConverter x:Key="StringBoolConverter"/>
+  </ResourceDictionary>
+  </ContentPage.Resources>
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+                iOS="0, 20, 0, 0" />
+  </ContentPage.Padding>
+   
+   
+  <Grid BackgroundColor="White" RowSpacing="1.5" ColumnSpacing="1.5">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="*"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+    <RowDefinition Height="Auto"></RowDefinition>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto"></ColumnDefinition>
+      <ColumnDefinition Width="*"></ColumnDefinition>
+      <ColumnDefinition Width="Auto"></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+
+    
+   
+    <StackLayout BackgroundColor="#04B277" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" MinimumHeightRequest="125"  Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+
+      <StackLayout BackgroundColor="#04B277"    Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="EndAndExpand" Padding="5">
+      <Label Text="Question" 
+                TextColor="White" FontSize="24"
+                   VerticalOptions="Center" FontAttributes="Bold" HorizontalOptions="Center" >
+        <Label.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+            <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+            <OnPlatform.WinPhone></OnPlatform.WinPhone>
+          </OnPlatform>
+        </Label.FontFamily>
+        </Label>
+      <Label Text="{Binding DispalyId}"
+                TextColor="White" FontSize="24"
+                   VerticalOptions="Center" FontAttributes="Bold" HorizontalOptions="Center" >
+        <Label.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+            <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+            <OnPlatform.WinPhone></OnPlatform.WinPhone>
+          </OnPlatform>
+        </Label.FontFamily>
+      </Label>
+      <Label Text="of"
+               TextColor="White" FontSize="24" FontAttributes="Bold"
+                    VerticalOptions="Center" HorizontalOptions="Center" >
+        <Label.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+            <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+            <OnPlatform.WinPhone></OnPlatform.WinPhone>
+          </OnPlatform>
+        </Label.FontFamily>
+      </Label>
+      <Label Text="{Binding MaxCount}"
+               TextColor="White" FontSize="24"
+                    VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold" >
+        <Label.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+            <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+            <OnPlatform.WinPhone></OnPlatform.WinPhone>
+          </OnPlatform>
+        </Label.FontFamily>
+      </Label>
+    </StackLayout>
+      </StackLayout>
+    <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" >
+      <StackLayout Padding="20, 20, 20, 20" BackgroundColor="White">
+        
+        <Label FontAttributes="Bold" x:Name="question" FontSize="20"  Text="{Binding QuestionText}"  XAlign="Start" YAlign="Start" BackgroundColor="White" TextColor="Black">
+          <Label.FontFamily>
+            <OnPlatform x:TypeArguments="x:String">
+              <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+              <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+              <OnPlatform.WinPhone></OnPlatform.WinPhone>
+            </OnPlatform>
+          </Label.FontFamily>
+        </Label>
+        
+      </StackLayout>
+
+      
+      <StackLayout Padding="5" >
+        <ScrollView>
+          <Grid BackgroundColor="#F2F2F2">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"></RowDefinition>
+              <RowDefinition Height="Auto"></RowDefinition>
+              <RowDefinition Height="Auto"></RowDefinition>
+              <RowDefinition Height="Auto"></RowDefinition>
+              <RowDefinition Height="Auto"></RowDefinition>
+              <RowDefinition Height="Auto"></RowDefinition>
+              <RowDefinition Height="Auto"></RowDefinition>
+              <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto"></ColumnDefinition>
+              <ColumnDefinition Width="*" ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackLayout  BackgroundColor="{Binding  ShowRightAnswerA, Converter={StaticResource ColorConverter}}" Orientation="Horizontal" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" >
+              <Button FontAttributes="Bold" x:Name="AnswerALabel"   Image="A_Small.png"   Command="{Binding SingleChoceCommand}" CommandParameter="{Binding AnswerChoiceALabel}" IsVisible="{Binding IsChoiceASelected}" BackgroundColor="Transparent">
+                <Button.Text>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>  </OnPlatform.iOS>
+                    <OnPlatform.Android></OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.Text>
+                  <Button.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.FontFamily>
+               
+              </Button>
+              
+              <Button  FontAttributes="Bold"  x:Name="ChoiceAImageCorrect"  Image="A_Small.png"  IsVisible="{Binding ShowRightAnswerA}" BackgroundColor="Transparent">
+                <Button.Text>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>  </OnPlatform.iOS>
+                    <OnPlatform.Android></OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.Text>
+                  <Button.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.FontFamily>
+              </Button>
+             <ScrollView>
+              <Label  LineBreakMode="WordWrap" HorizontalOptions="FillAndExpand" FontAttributes="Bold" x:Name="AnswerAQuestion" FontSize="20"  Text="{Binding AnswerChoiceA}"  XAlign="Start" YAlign="Center" TextColor="Black">
+                <Label.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Label.FontFamily>
+              </Label>
+             </ScrollView>
+            </StackLayout>
+            <StackLayout BackgroundColor="{Binding  ShowRightAnswerB, Converter={StaticResource ColorConverter}}" Orientation="Horizontal" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" >
+              <Button FontAttributes="Bold" x:Name="AnswerBLabel" FontSize="36" Image="B_Small.png"  Command="{Binding SingleChoceCommand}" CommandParameter="{Binding AnswerChoiceBLabel}"   IsVisible="{Binding IsChoiceBSelected}" BackgroundColor="Transparent">
+                <Button.Text>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>  </OnPlatform.iOS>
+                    <OnPlatform.Android></OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.Text>
+                  <Button.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.FontFamily>
+              </Button>
+              <Button  x:Name="ChoiceBImageCorrect" FontAttributes="Bold" FontSize="36" Image="B_Small.png" IsVisible="{Binding ShowRightAnswerB}" BackgroundColor="Transparent">
+               <Button.Text>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>  </OnPlatform.iOS>
+                    <OnPlatform.Android></OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.Text>
+                 <Button.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.FontFamily>
+              </Button>
+              <ScrollView>
+              <Label  LineBreakMode="WordWrap" HorizontalOptions="FillAndExpand" FontAttributes="Bold" x:Name="AnswerBQuestion" FontSize="20"  Text="{Binding AnswerChoiceB}"  XAlign="Start" YAlign="Center" TextColor="Black">
+                <Label.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Label.FontFamily>
+              </Label>
+              </ScrollView>
+            </StackLayout>
+            <StackLayout BackgroundColor="{Binding  ShowRightAnswerC, Converter={StaticResource ColorConverter}}" Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" IsVisible="{Binding  AnswerChoiceC, Converter={StaticResource StringBoolConverter}}">
+              <Button FontAttributes="Bold" x:Name="AnswerCLabel" FontSize="36" Image="C_Small.png"  Command="{Binding SingleChoceCommand}" CommandParameter="{Binding AnswerChoiceCLabel}"   IsVisible="{Binding IsChoiceCSelected}" BackgroundColor="Transparent">
+                 <Button.Text>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>  </OnPlatform.iOS>
+                    <OnPlatform.Android></OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.Text>
+                  <Button.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.FontFamily>
+              </Button>
+              <Button x:Name="ChoiceCImageCorrect"  FontAttributes="Bold" FontSize="36"  Image="C_Small.png" IsVisible="{Binding ShowRightAnswerC}" BackgroundColor="Transparent">
+                 <Button.Text>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>  </OnPlatform.iOS>
+                    <OnPlatform.Android></OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.Text>
+                  
+                    <Button.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.FontFamily>
+              </Button>
+              <ScrollView>
+              <Label FontAttributes="Bold" LineBreakMode="WordWrap"  HorizontalOptions="FillAndExpand" x:Name="AnswerCQuestion" FontSize="20"  Text="{Binding AnswerChoiceC}"  XAlign="Start" YAlign="Center" TextColor="Black">
+                <Label.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Label.FontFamily>
+              </Label>
+              </ScrollView>
+            </StackLayout>
+            <StackLayout BackgroundColor="{Binding  ShowRightAnswerD, Converter={StaticResource ColorConverter}}" Orientation="Horizontal" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" IsVisible="{Binding  AnswerChoiceD, Converter={StaticResource StringBoolConverter}}">
+              <Button FontAttributes="Bold"  x:Name="AnswerDLabel" FontSize="36" Image="D_Small.png"  IsVisible="{Binding IsChoiceDSelected}"  Command="{Binding SingleChoceCommand}" CommandParameter="{Binding AnswerChoiceDLabel}" BackgroundColor="Transparent">
+                 <Button.Text>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>  </OnPlatform.iOS>
+                    <OnPlatform.Android></OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.Text>
+                  
+                    <Button.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.FontFamily>
+              </Button>
+              <Button x:Name="ChoiceDImageCorrect"  FontAttributes="Bold" FontSize="36" IsVisible="{Binding ShowRightAnswerD}" Image="D_Small.png" BackgroundColor="Transparent">
+                 <Button.Text>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>  </OnPlatform.iOS>
+                    <OnPlatform.Android></OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.Text>
+                <Button.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.FontFamily>
+              </Button>
+              <ScrollView>
+              <Label FontAttributes="Bold" LineBreakMode="WordWrap"  HorizontalOptions="FillAndExpand" x:Name="AnswerDQuestion" FontSize="20"  Text="{Binding AnswerChoiceD}"  XAlign="Start" YAlign="Center" TextColor="Black">
+                <Label.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Label.FontFamily>
+              </Label>
+              </ScrollView>
+            </StackLayout>
+            <StackLayout BackgroundColor="{Binding  ShowRightAnswerE, Converter={StaticResource ColorConverter}}" Orientation="Horizontal" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" IsVisible="False">
+              <Button FontAttributes="Bold" x:Name="AnswerELabel" FontSize="36" Image="E_Small.png"  Text="  "  IsVisible="{Binding IsChoiceESelected}" Command="{Binding SingleChoceCommand}">
+                <Button.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.FontFamily>
+              </Button>
+              <Button x:Name="ChoiceEImageCorrect"  FontAttributes="Bold" FontSize="36"  IsVisible="{Binding ShowRightAnswerE}" Image="E_Small.png" Text="  ">
+                <Button.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.FontFamily>
+              </Button>
+              
+              <Label FontAttributes="Bold" LineBreakMode="WordWrap"  HorizontalOptions="FillAndExpand" x:Name="AnswerEQuestion" FontSize="20"  Text="{Binding AnswerChoiceE}" XAlign="Start" YAlign="Center" TextColor="Black">
+                <Label.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Label.FontFamily>
+              </Label>
+            </StackLayout>
+            <StackLayout BackgroundColor="{Binding  ShowRightAnswerF, Converter={StaticResource ColorConverter}}" Orientation="Horizontal"  Grid.Row="5" Grid.Column="0" IsVisible="False">
+              <Button FontAttributes="Bold"  x:Name="AnswerFLabel" FontSize="36" Image="F_Small.png" Text="  " IsVisible="{Binding IsChoiceFSelected}" Command="{Binding SingleChoceCommand}">
+                <Button.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.FontFamily>
+              </Button>
+              <Button x:Name="ChoiceFImageCorrect" FontAttributes="Bold" FontSize="36" IsVisible="{Binding ShowRightAnswerF}" Image="F_Small.png" Text="  ">
+                <Button.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.FontFamily>
+              </Button>
+             
+              <Label FontAttributes="Bold" LineBreakMode="WordWrap"  HorizontalOptions="FillAndExpand" x:Name="AnswerFQuestion" FontSize="20"  Text="{Binding AnswerChoiceF}"  XAlign="Center" YAlign="Center" TextColor="Black">
+                <Label.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Label.FontFamily>
+              </Label>
+            </StackLayout>
+            <StackLayout BackgroundColor="{Binding  ShowRightAnswerG, Converter={StaticResource ColorConverter}}" Orientation="Horizontal"  Grid.Row="6" Grid.Column="0" IsVisible="False">
+              <Button FontAttributes="Bold" x:Name="AnswerGLabel" FontSize="36"  Text="  "  IsVisible="{Binding IsChoiceGSelected}" Command="{Binding SingleChoceCommand}">
+                <Button.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.FontFamily>
+              </Button>
+              <Button x:Name="ChoiceGImageCorrect"  FontAttributes="Bold" FontSize="36" IsVisible="{Binding ShowRightAnswerG}" Text="  " >
+                <Button.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.FontFamily>
+              </Button>
+             
+              <Label FontAttributes="Bold" LineBreakMode="WordWrap"  HorizontalOptions="FillAndExpand" x:Name="AnswerGQuestion" FontSize="16"  Text="{Binding AnswerChoiceG}"  XAlign="Center" YAlign="Center" TextColor="Black">
+                <Label.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Label.FontFamily>
+              </Label>
+            </StackLayout>
+            <StackLayout BackgroundColor="{Binding  ShowRightAnswerH, Converter={StaticResource ColorConverter}}" Orientation="Horizontal"   Grid.Row="7" Grid.Column="0" IsVisible="False">
+              <Button FontAttributes="Bold"  x:Name="AnswerHLabel" FontSize="36"  Text="  " IsVisible="{Binding IsChoiceHSelected}" Command="{Binding SingleChoceCommand}">
+                <Button.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.FontFamily>
+              </Button>
+              
+              <Button x:Name="ChoiceHImageCorrect"   FontAttributes="Bold" FontSize="36" IsVisible="{Binding ShowRightAnswerH}"  Text="  ">
+                <Button.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Button.FontFamily>
+              </Button>
+              
+              <Label FontAttributes="Bold" LineBreakMode="WordWrap"  HorizontalOptions="FillAndExpand" x:Name="AnswerHQuestion" FontSize="16"  Text="{Binding AnswerChoiceH}"  XAlign="Center" YAlign="Center" TextColor="Black">
+                <Label.FontFamily>
+                  <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+                    <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+                    <OnPlatform.WinPhone></OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Label.FontFamily>
+              </Label>
+            </StackLayout>
+          </Grid>
+        </ScrollView>
+      </StackLayout>
+    </StackLayout>
+    <Button Text="Prev" x:Name="PreviousButton" Grid.Row="2" Grid.Column="0" WidthRequest="75"
+                BackgroundColor="#04B277" TextColor="White" FontAttributes="Bold"
+                 BorderRadius="8" BorderWidth="3" BorderColor="Black" Clicked="PreviousButton_OnClicked" >
+      <Button.FontFamily>
+        <OnPlatform x:TypeArguments="x:String">
+          <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+          <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+          <OnPlatform.WinPhone></OnPlatform.WinPhone>
+        </OnPlatform>
+      </Button.FontFamily>
+      </Button>
+
+    <StackLayout Grid.Row="2" Grid.Column="1"  Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+      <Button Text=" End Session " x:Name="StopButton" BackgroundColor="#FF0000" TextColor="White" BorderRadius="10" BorderWidth="3" >
+        <Button.FontFamily>
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+            <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+            <OnPlatform.WinPhone></OnPlatform.WinPhone>
+          </OnPlatform>
+        </Button.FontFamily>
+      </Button>
+    </StackLayout>
+    <Button Text="Next" Grid.Row="2" Grid.Column="2" WidthRequest="75" x:Name="NextButton"
+                BackgroundColor="#04B277" TextColor="White" Clicked="NextButton_OnClicked"
+                 BorderRadius="8" BorderWidth="3" BorderColor="Black" FontAttributes="Bold" >
+      <Button.FontFamily>
+        <OnPlatform x:TypeArguments="x:String">
+          <OnPlatform.iOS>Helvetica Neue</OnPlatform.iOS>
+          <OnPlatform.Android>Roboto Sans</OnPlatform.Android>
+          <OnPlatform.WinPhone></OnPlatform.WinPhone>
+        </OnPlatform>
+      </Button.FontFamily>
+      </Button>
+
+   
+
+  </Grid>
+
+</ContentPage>

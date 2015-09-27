@@ -1,0 +1,62 @@
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.MainPage.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.QuestionPage.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.StudyPlanPage.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.MyHistoryPage.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.QuestionListPage.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.ExamModeConfigPage.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.ExamRandomSessionChoice.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.ExamModeRandomConfigPage.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.ExamQuestionPage.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.ExamQuestionReportPage.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/MainPage.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/QuestionPage.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/StudyPlanPage.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/MyHistoryPage.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/QuestionListPage.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamModeConfigPage.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamRandomSessionChoice.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamModeRandomConfigPage.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamQuestionPage.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamQuestionReportPage.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/bin/Release/QuestionData.xml
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/bin/Release/ExamPrep.dll.mdb
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/bin/Release/ExamPrep.dll
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.dll
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.dll.mdb
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/bin/Release/Acr.UserDialogs.dll
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/bin/Release/Newtonsoft.Json.dll
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/bin/Release/Xamarin.Forms.Core.dll
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/bin/Release/Xamarin.Forms.Xaml.dll
+/Users/olanrewajuogunkunle/Desktop/OISProjects/ExamPrep/ExamPrep/ExamPrep/bin/Release/Xamarin.Forms.Platform.dll
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.MainPage.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.QuestionPage.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.StudyPlanPage.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.MyHistoryPage.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.QuestionListPage.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.ExamModeConfigPage.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.ExamRandomSessionChoice.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.ExamModeRandomConfigPage.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.ExamQuestionPage.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.ExamQuestionReportPage.xaml
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/MainPage.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/QuestionPage.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/StudyPlanPage.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/MyHistoryPage.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/QuestionListPage.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamModeConfigPage.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamRandomSessionChoice.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamModeRandomConfigPage.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamQuestionPage.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamQuestionReportPage.xaml.g.cs
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/bin/Release/QuestionData.xml
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/bin/Release/ExamPrep.dll.mdb
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/bin/Release/ExamPrep.dll
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.dll
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/obj/Release/ExamPrep.dll.mdb
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/bin/Release/Acr.UserDialogs.dll
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/bin/Release/Newtonsoft.Json.dll
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/bin/Release/Xamarin.Forms.Core.dll
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/bin/Release/Xamarin.Forms.Platform.dll
+/Users/olanrewajuogunkunle/Desktop/OISProjects - UTMB/ExamPrep/ExamPrep/ExamPrep/bin/Release/Xamarin.Forms.Xaml.dll

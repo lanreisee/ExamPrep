@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ExamPrep;assembly=ExamPrep"
+             x:Class="ExamPrep.MainPage"
+             Title="Xamarin Exam Prep"
+             BindingContext="{x:Static local:AppMenuFactory.MenuList}"
+             BackgroundColor="#EFEFF4" >
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+                iOS="0, 0, 0, 0" />
+  </ContentPage.Padding>
+  <StackLayout x:Name="Main" VerticalOptions="FillAndExpand" Orientation="Vertical" BackgroundColor="White">
+    <StackLayout.Padding>
+      <OnPlatform x:TypeArguments="Thickness">
+        <OnPlatform.iOS>
+          0
+        </OnPlatform.iOS>
+        <OnPlatform.Android>
+          10,8,10,8
+        </OnPlatform.Android>
+        <OnPlatform.WinPhone>
+          0, 0, 0, 0
+        </OnPlatform.WinPhone>
+      </OnPlatform>
+    </StackLayout.Padding>
+    
+  <StackLayout x:Name="Inner" VerticalOptions="FillAndExpand" Orientation="Vertical" HorizontalOptions="CenterAndExpand" >
+      <ListView x:Name="AllStudyPlan" ItemsSource="{Binding .}"
+                    ItemTapped="OnItemTapped"
+                    ItemSelected="OnItemSelected" BackgroundColor="White" HasUnevenRows="True" SeparatorColor="Gray" SeparatorVisibility="Default">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell >
+              <!--Height="52"-->
+              <ViewCell.View>
+                <StackLayout VerticalOptions="FillAndExpand" >
+                  <StackLayout.Padding>
+                    <OnPlatform x:TypeArguments="Thickness">
+                      <OnPlatform.iOS>
+                        15, 15, 15, 15
+                      </OnPlatform.iOS>
+                      <OnPlatform.Android>
+                        0, 5, 0, 10
+                      </OnPlatform.Android>
+                      <OnPlatform.WinPhone>
+                        0, 0, 0, 0
+                      </OnPlatform.WinPhone>
+                    </OnPlatform>
+                  </StackLayout.Padding>
+                  <Grid>
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="*"></ColumnDefinition>
+                      <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                  <Label Text="{Binding MenuName}"  FontSize="20" TextColor="#47494A" FontAttributes="Bold" FontFamily="{x:Static local:AppFontFamily.HelveticaNeue}"></Label>
+                    <Image Source="tap.png" HorizontalOptions="End" HeightRequest="24" VerticalOptions="Start" Grid.Column="1"></Image>
+                    </Grid>
+                  </StackLayout>
+              </ViewCell.View>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+  </StackLayout>
+  </StackLayout>
+</ContentPage>

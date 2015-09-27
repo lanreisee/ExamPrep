@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamPrep.ExamModeConfigPage"
+             xmlns:local="clr-namespace:ExamPrep;assembly=ExamPrep"
+             Title="Session Configuration"
+             BackgroundColor="White" >
+  <!--<ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+                iOS="0, 20, 0, 0" />
+  </ContentPage.Padding>-->
+  
+  <ContentPage.Resources>
+    <ResourceDictionary>
+  <local:InverseBoolConverter x:Key="Inverter"/>
+      </ResourceDictionary>
+    </ContentPage.Resources>
+  <StackLayout x:Name="Main" VerticalOptions="FillAndExpand" Orientation="Vertical" BackgroundColor="White">
+    <Button  Text="Start Test" x:Name="StartButton"  WidthRequest="150" HeightRequest="40" FontSize="20" HorizontalOptions="Center" BackgroundColor="#3199FF" BorderRadius="8" BorderWidth="3" BorderColor="Black" TextColor="White"></Button> <!---->
+    <Grid Padding="5" BackgroundColor="White"><!--#CDBA96--><!--#8B7D6B--><!--#8B8378-->
+      <!--#858585"#8B8989-->
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"></ColumnDefinition>
+        <ColumnDefinition Width="*"></ColumnDefinition>
+        <ColumnDefinition Width="*"></ColumnDefinition>
+        <ColumnDefinition Width="*"></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"></RowDefinition>
+        
+       
+      </Grid.RowDefinitions>
+      <Switch x:Name="TimeSwitch" Toggled="Switch_OnToggled" Grid.Row="0" Grid.Column="0" IsVisible="False"></Switch>
+    
+     <StackLayout Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal" VerticalOptions="Center"  HorizontalOptions="Center" IsVisible="False">
+      <Label Text="Not Timed" x:Name="TimeLabel" VerticalOptions="Start" HorizontalOptions="Start" BindingContext="{x:Reference TimeSwitch}" IsVisible="{Binding IsToggled, Converter={StaticResource Inverter}}" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"></Label>
+    <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Horizontal" VerticalOptions="Center" BindingContext="{x:Reference TimeSwitch}" IsVisible="{Binding IsToggled}" x:Name="StackLayoutTime">
+      <Label Text="{Binding Text}" x:Name="LabelTotalTime" HorizontalOptions="Start" VerticalOptions="Start" BindingContext="{x:Reference LabelQuestionSelection}"></Label>
+    <Label Text="mins" x:Name="LabelTimeLabel"   HorizontalOptions="Start" VerticalOptions="Start"></Label></StackLayout>
+      </StackLayout>
+      
+      <!--<Stepper BackgroundColor="#8B7765" Minimum="0" Maximum="150" Increment="10" HorizontalOptions="Start" VerticalOptions="Start" ValueChanged="Stepper_OnValueChanged" x:Name="Stepper" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"></Stepper>-->
+      <StackLayout Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal" VerticalOptions="Center"  HorizontalOptions="Center">
+     
+        <Label Text="{Binding NoOfQuestions}" FontSize="20" FontAttributes="Bold" x:Name="LabelQuestionSelection" HorizontalOptions="Start" VerticalOptions="Start" TextColor="Black"></Label>
+    <Label Text="Questions" x:Name="QuestionLabel" FontSize="20" FontAttributes="Bold"  HorizontalOptions="Start" VerticalOptions="Start" TextColor="Black"></Label></StackLayout>
+       
+    
+    </Grid>
+     <StackLayout x:Name="Inner" VerticalOptions="FillAndExpand" Orientation="Vertical" HorizontalOptions="FillAndExpand" >
+       <StackLayout.Padding>
+         <OnPlatform x:TypeArguments="Thickness">
+           <OnPlatform.iOS>
+             0
+           </OnPlatform.iOS>
+           <OnPlatform.Android>
+             0,0,60,8
+           </OnPlatform.Android>
+           <OnPlatform.WinPhone>
+             0, 0, 0, 0
+           </OnPlatform.WinPhone>
+         </OnPlatform>
+       </StackLayout.Padding>
+      <ListView x:Name="AllStudyPlan" ItemsSource="{Binding Category}"
+                    ItemTapped="OnItemTapped"
+                    ItemSelected="OnItemSelected" BackgroundColor="White" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <SwitchCell Text="{Binding NameCount}" BindingContext="{Binding .}" OnChanged="SwitchCell_OnOnChanged" >
+              </SwitchCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+   
+  </StackLayout>
+</ContentPage>
